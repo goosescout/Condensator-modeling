@@ -6,8 +6,8 @@ from decimal import Decimal
 
 g = 9.81  # g = const
 
-V_0_DEFAULT = 6_000_000_000  # mm/s
-Q_DEFAULT = 10 ** (-6)  # C
+V_0_DEFAULT = 6_000_000  # m/s
+Q_DEFAULT = -1.6 * 10 ** (-19)  # C
 M_DEFAULT = 9.1 * 10 ** (-31)  # kg
 U_DEFAULT = 220  # V
 D_DEFAULT = 10  # mm
@@ -115,7 +115,7 @@ print("""
 После ввода входных данных программа сохранит в той же директории, откуда она была запущена, 2 файла с траекторией заряда.
 Входные данные:""")
 
-V_0 = enter_func(V_0_DEFAULT, "скорость (в мм/с)", positive_check) * 1_000  # mm/s
+V_0 = enter_func(V_0_DEFAULT, "скорость (в м/с)", positive_check) * 1_000  # mm/s
 q = abs(enter_func(Q_DEFAULT, "заряд (в Кл) (знак не важен)", non_zero_check))  # +C
 m = enter_func(M_DEFAULT, "массу (в кг)", positive_check)  # kg
 U = enter_func(U_DEFAULT, "напряжение (в В)", positive_check)  # V
