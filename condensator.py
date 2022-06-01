@@ -115,7 +115,7 @@ print("""
 После ввода входных данных программа сохранит в той же директории, откуда она была запущена, 2 файла с траекторией заряда.
 Входные данные:""")
 
-V_0 = enter_func(V_0_DEFAULT, "скорость (в м/с)", positive_check) * 1_000  # mm/s
+V_0 = enter_func(V_0_DEFAULT, "скорость (в мм/с)", positive_check) * 1_000  # mm/s
 q = abs(enter_func(Q_DEFAULT, "заряд (в Кл) (знак не важен)", non_zero_check))  # +C
 m = enter_func(M_DEFAULT, "массу (в кг)", positive_check)  # kg
 U = enter_func(U_DEFAULT, "напряжение (в В)", positive_check)  # V
