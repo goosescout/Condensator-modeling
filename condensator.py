@@ -6,7 +6,7 @@ from decimal import Decimal
 
 g = 9.81  # g = const
 
-V_0_DEFAULT = 6_000_000_000  # mm/s
+V_0_DEFAULT = 6_000_000  # m/s
 Q_DEFAULT = 10 ** (-6)  # C
 M_DEFAULT = 9.1 * 10 ** (-31)  # kg
 U_DEFAULT = 220  # V
